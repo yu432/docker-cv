@@ -16,9 +16,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
-  afterbuild:
-    runs-on: ubuntu-latest
-    steps:
     - name: more rights
       run: pwd && chmod +x "${GITHUB_WORKSPACE}/.github/script.sh"
     - name: Run Bash Script
