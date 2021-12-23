@@ -17,6 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
     - name: more rights
-      run: pwd && chmod +x "${GITHUB_WORKSPACE}/.github/script.sh"
-    - name: Run Bash Script
-      run: docker ps -a && docker images && pwd && ./.github/script.sh
+      run: pwd && .. && pwd && .. && pwd && .. && pwd && .. && pwd && ..
