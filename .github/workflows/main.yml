@@ -19,4 +19,4 @@ jobs:
     - name: more rights
       run: pwd && chmod +x "${GITHUB_WORKSPACE}/.github/script.sh"
     - name: Run Bash Script
-      run: pwd && ./.github/script.sh
+      run: docker ps -a && pwd && ./.github/script.sh
